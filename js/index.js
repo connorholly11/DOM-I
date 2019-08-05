@@ -180,15 +180,20 @@ footer.textContent = siteContent ["footer"]["copyright"]
 //ADD NEW CONTENT 
 
 //change color of nav text to green
-const navColor = document.querySelector("nav");
+const navColor = document.querySelectorAll("header nav a")[0].style.color="green";
+const navColor1 = document.querySelectorAll("header nav a")[1].style.color="green";
+const navColor2 = document.querySelectorAll("header nav a")[2].style.color="green";
+const navColor3 = document.querySelectorAll("header nav a")[3].style.color="green";
+const navColor4 = document.querySelectorAll("header nav a")[4].style.color="green";
+const navColor5 = document.querySelectorAll("header nav a")[5].style.color="green";
 
 
 
 //add using append
-const newContentNav = document.createElement("header nav a");
+const newContentNav = document.createElement("nav");
 newContentNav.textContent = "Testimonials";
 
-const navItem = document.querySelectorAll("header nav a");
+const nav = document.querySelectorAll("header nav a");
 navItem.append(newContentNav);
 
 
