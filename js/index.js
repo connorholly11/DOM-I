@@ -158,6 +158,10 @@ contactH4.textContent = siteContent["contact"]["contact-h4"];
 const p = document.querySelectorAll(".contact p")[0];
 p.textContent = siteContent["contact"]["address"];
 
+// p[0].setAttribute ('style', 'white-space: pre;');
+// p[0].textContent = '123 Way 456 Street \r \n';
+// p[0].textContent += 'Somewhere, USA'
+
 //phone
 const p2 = document.querySelectorAll(".contact p")[1];
 p2.textContent = siteContent["contact"]["phone"];
@@ -202,7 +206,7 @@ const newContentNav2 = document.createElement("nav");
 const textNode = document.createTextNode("Whatever");
 newContentNav2.appendChild(textNode);
 
-document.querySelector("nav").appendChild(newContentNav2);
+document.querySelector("nav a").appendChild(newContentNav2);
 
 
 
@@ -210,5 +214,5 @@ document.querySelector("nav").appendChild(newContentNav2);
 const newContentNav3 = document.createElement("nav");
 newContentNav3.textContent = "Prepend";
 
-const navItem3 = document.querySelector("nav");
+const navItem3 = document.querySelector("nav a");
 navItem3.prepend(newContentNav3);
