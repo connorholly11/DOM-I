@@ -193,8 +193,8 @@ const navColor5 = document.querySelectorAll("header nav a")[5].style.color="gree
 const newContentNav = document.createElement("nav");
 newContentNav.textContent = "Testimonials";
 
-const nav = document.querySelectorAll("header nav a");
-navItem.append(newContentNav);
+const nav = document.querySelector("header");
+nav.append(newContentNav);
 
 
 //add using append child
