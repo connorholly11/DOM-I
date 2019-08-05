@@ -209,6 +209,10 @@ newContentNav2.textContent= "Whatever";
 const whatever = document.querySelector("nav")
 whatever.appendChild(newContentNav2);
 
+const navColor6 = document.querySelectorAll("header nav a")[6].style.color="green";
+
+
+
 
 
 //add using prepend
@@ -217,3 +221,5 @@ newContentNav3.textContent = "Prepend";
 
 const navItem3 = document.querySelector("nav");
 navItem3.prepend(newContentNav3);
+
+const navColor7 = document.querySelectorAll("header nav a")[0].style.color="green";
