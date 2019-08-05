@@ -74,3 +74,35 @@ main.setAttribute('src', siteContent["main-content"]["middle-img-src"])//image t
 
 
 //FOOTER
+
+
+
+//ADD NEW CONTENT 
+
+//change color of nav text to green
+
+
+
+//add using append
+const newContentNav = document.createElement("nav");
+newContentNav.textContent = "Testimonials";
+
+const navItem = document.querySelector("nav");
+navItem.append(newContentNav);
+
+
+//add using append child
+const newContentNav2 = document.createElement("nav");
+const textNode = document.createTextNode("Whatever");
+newContentNav2.appendChild(textNode);
+
+document.querySelector("nav").appendChild(newContentNav2);
+
+
+
+//add using prepend
+const newContentNav3 = document.createElement("nav");
+newContentNav3.textContent = "Prepend";
+
+const navItem3 = document.querySelector("nav");
+navItem3.prepend(newContentNav3);
